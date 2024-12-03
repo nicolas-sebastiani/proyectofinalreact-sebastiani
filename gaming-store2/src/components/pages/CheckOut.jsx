@@ -3,7 +3,7 @@ import { useContext } from "react"
 
 export default function CheckOut() {
 
-    const { carrito, precioTotal, vaciarCarrito, removeItem } = useContext(CartContext)
+    const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext)
 
     return (
         <div className="h-screen grid grid-cols-3 mt-5">

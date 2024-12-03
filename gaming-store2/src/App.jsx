@@ -3,10 +3,10 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer'
 import Login from './components/pages/Login'
 import Cart from './components/pages/Cart'
+import CheckOut from './components/pages/CheckOut'
 import "./styles.css"
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
-import CheckOut from './components/pages/CheckOut'
 
 export default function App() {
   return (
