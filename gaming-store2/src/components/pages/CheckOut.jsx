@@ -8,17 +8,17 @@ export default function CheckOut() {
     return (
         <div className="h-screen grid grid-cols-3 mt-5">
         <div className="lg:col-span-2 col-span-3 space-y-8 px-12">
-            <div className="mt-8 p-4 relative flex flex-col sm:flex-row sm:items-center bg-white shadow rounded-md">
+            <div className="mt-8 p-4 relative flex flex-col sm:flex-row sm:items-center bg-[#0d212e] shadow rounded-md">
                 <div className="flex flex-row items-center border-b sm:border-b-0 w-full sm:w-auto pb-4 sm:pb-0">
                     <div className="text-yellow-500">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-6 sm:w-5 h-6 sm:h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <div className="text-sm font-medium ml-3">Checkout</div>
+                    <div className="text-sm font-medium ml-3 text-gray-200">Checkout</div>
                 </div>
-                <div className="text-sm tracking-wide text-gray-500 mt-4 sm:mt-0 sm:ml-4">Completa con la informacion de envio y pago</div>
-                <div className="absolute sm:relative sm:top-auto sm:right-auto ml-auto right-4 top-4 text-gray-400 hover:text-gray-800 cursor-pointer">
+                <div className="text-sm tracking-wide text-gray-200 mt-4 sm:mt-0 sm:ml-4">Completa con la informacion de envio y pago</div>
+                <div className="absolute sm:relative sm:top-auto sm:right-auto ml-auto right-4 top-4 text-gray-400 hover:text-gray-200 cursor-pointer">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </div>
             </div>
@@ -72,12 +72,12 @@ export default function CheckOut() {
                     <fieldset className="mb-3 shadow-lg rounded bg-[#0d212e] text-gray-200">
                         <label className="flex border-b border-gray-200 h-12 py-3 items-center">
                             <span className="text-right px-2">Tarjeta</span>
-                            <input name="card" className="focus:outline-none px-3 w-full bg-transparent" placeholder="Numero MM/YY CVC" required=""/>
+                            <input name="card" className="focus:outline-none px-3 w-full bg-transparent" placeholder="Numero MM/YY CVC" required="" type="number"/>
                         </label>
                     </fieldset>
                 </section>
             </div>
-            <button className="submit-button px-4 py-3 rounded-full bg-[#0d212e] text-white focus:ring focus:outline-none w-full text-xl font-semibold transition-colors">
+            <button className="submit-button px-4 py-3 rounded-full bg-[#0d212e] text-white focus:ring focus:outline-none w-full text-xl font-semibold transition-colors hover:scale-105">
                     <p>
                         Pagar {new Intl.NumberFormat('es-AR', {
                             style: 'currency',
