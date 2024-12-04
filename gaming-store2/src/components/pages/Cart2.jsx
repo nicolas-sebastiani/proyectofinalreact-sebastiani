@@ -11,7 +11,8 @@ const Cart2 = () => {
             <h1 className="mb-10 text-center text-5xl font-mono text-gray-200">Carrito</h1>
             <div className="flex flex-col md:flex-row md:justify-between md:mx-10">
                 <div className="md:w-2/3">
-                    {carrito.map((prod) => (
+                    {
+                    carrito.map((prod) => (
                         <div key={prod.id} className="mx-auto max-w-5xl justify-center px-6 md:space-x-6 xl:px-0">
                             <div className="rounded-lg md:w-full">
                                 <div className="justify-between mb-6 rounded-lg bg-[#0d212e] p-6 shadow-md sm:flex sm:justify-start">
@@ -32,7 +33,9 @@ const Cart2 = () => {
                                 </div>
                             </div>
                         </div>
-                    ))}
+                        ))
+                    }
+                    
                 </div>
                 <div className="mt-6 h-full rounded-lg border bg-[#0d212e] p-6 shadow-md md:w-1/3 md:mt-0">
                     <div className="mb-2 flex justify-between">
