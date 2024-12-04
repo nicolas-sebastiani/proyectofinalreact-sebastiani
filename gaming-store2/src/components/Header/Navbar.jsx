@@ -18,7 +18,7 @@ export default function Navbar() {
                     <div className="place-items-end h-full flex">
                         <CartWitged/>
                         <Link to="/login"
-                        className="px-4 py-2 text-xs font-bold text-white uppercase transition-all duration-150 bg-slate-950 rounded shadow outline-none active:bg-slate-650 hover:border-gray-300 focus:outline-none ease">
+                        className="px-4 py-2 text-xs font-bold text-white uppercase transition-all duration-150 bg-slate-950 rounded shadow outline-none active:bg-slate-650 hover:bg-slate-800 focus:outline-none ease">
                         Log In
                         </Link>
                     </div>

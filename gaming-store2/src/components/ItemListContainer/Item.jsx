@@ -13,7 +13,7 @@ export default function Item({producto}) {
                                 <Link to={`/item/${producto.id}`}>
                                     <img
                                         src={producto.image}
-                                        alt="card-image" className="object-scale-down w-full h-full transition-all hover:scale-105" 
+                                        alt="card-image" className="object-scale-down w-full h-full transition duration-500 hover:scale-105" 
                                     />
                                 </Link>
                             </div>

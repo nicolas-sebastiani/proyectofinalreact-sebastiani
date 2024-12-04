@@ -40,9 +40,9 @@ const Login = () => {
                     </div>
                     <div className="btn">
                     <button className="button1" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-                    <button className="button2">Sign Up</button>
+                    <button className="button2">Registrate</button>
                     </div>
-                    <button className="button3">Olvido su contraseña?</button>
+                    <button className="button3">Olvidaste tu contraseña?</button>
                 </form>
             </div>
         </StyledWrapper>
@@ -50,6 +50,12 @@ const Login = () => {
 }
 
 const StyledWrapper = styled.div`
+
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: start;
+
     .container{
         display: flex; 
         justify-content: center; 
@@ -73,9 +79,9 @@ const StyledWrapper = styled.div`
 
     #heading {
         text-align: center;
-        margin: 2em;
+        margin: 1rem;
         color: rgb(255, 255, 255);
-        font-size: 1.2em;
+        font-size: 1.8em;
     }
 
     .field {

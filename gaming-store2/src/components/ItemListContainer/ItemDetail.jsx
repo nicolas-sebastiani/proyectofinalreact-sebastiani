@@ -27,7 +27,7 @@ const ItemDetail = ( {item} ) => {
                         <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-gray-500 bg-clip-border rounded-xl h-96">
                             <img
                                 src={item.image}
-                                alt="card-image" className="object-cover object-top w-full h-full transition-all hover:scale-105" />
+                                alt="card-image" className="object-cover object-top w-full h-full transition duration-500 hover:scale-105" />
                         </div>
                         <div className="p-6">
                             <div className="flex items-center justify-between mb-2">
