@@ -49,7 +49,7 @@ const Cart2 = () => {
                     </div>
                     <div className="flex justify-between">
                         <p className="text-gray-300">Envio</p>
-                        <p className="text-green-500">Gratis</p>
+                        <p className="text-green-600">Gratis</p>
                     </div>
                     <hr className="my-4" />
                     <div className="flex justify-between">
